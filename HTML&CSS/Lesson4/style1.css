@@ -1,0 +1,58 @@
+body,html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+    position: relative;
+    z-index: 1;
+}
+.text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.leftdoor {
+    position: absolute;
+    width:50%;
+    height: 100%;
+    background: #852760 ;
+    z-index: 5;
+    left: 0;
+    border:15px solid #6a0f47;
+}
+.rightdoor {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #852760 ;
+    z-index: 5;
+    right: 0;
+    border:15px solid #6a0f47;    
+}
+.wrapper:hover .rightdoor {
+	animation: slide-rotate-ver-right 2s ease-out forwards;
+}
+.wrapper:hover .leftdoor {
+    animation: slide-rotate-ver-left 2s ease-out forwards;
+}
+@keyframes slide-rotate-ver-right {
+  0% {   transform: translateX(0) rotateY(0); }
+  100% { transform: translateX(180px) rotateY(-50deg); }
+}
+@keyframes slide-rotate-ver-left {
+    0% {transform: translateX(0) rotateY(0); }
+    100% {transform: translateX(-180px) rotateY(50deg);}
+  }

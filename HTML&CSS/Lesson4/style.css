@@ -1,0 +1,82 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clock-wrapper {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.circle {
+    border:4px solid lightseagreen;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hours {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 4px;
+    background: lightseagreen;
+    animation-duration: 3600s;
+    animation-name: myrotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.minuts {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 4px;
+    background: lightseagreen;
+    animation-duration: 60s;
+    animation-name: myrotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+    .point {
+     position: absolute;
+    top: 44%;
+    width: 6%;
+    height: 6%;
+    border-radius: 20px;;
+    background: lightseagreen;
+    }
+
+@keyframes myrotate {
+    0% { transform: rotate(0deg); margin-right: 0px; margin-top: 0px; }
+
+    10% { transform: rotate(36deg); margin-right: -55px; margin-top: 5px; }
+
+    20% { transform: rotate(72deg); margin-right: -95px; margin-top: 35px; }
+
+    30% { transform: rotate(108deg); margin-right: -100px; margin-top: 60px; }
+
+    40% { transform: rotate(144deg); margin-right: -65px; margin-top: 90px; }
+
+    50% { transform: rotate(180deg); margin-right: 0px; margin-top: 180px; }
+
+    60% { transform: rotate(216deg); margin-right: 65px; margin-top: 90px; }
+
+    70% { transform: rotate(252deg); margin-right: 100px; margin-top: 60px; }
+
+    80% { transform: rotate(288deg); margin-right: 95px;  margin-top: 30px; }
+
+    90% { transform: rotate(324deg); margin-right: 60px;  margin-top: 5px; }
+
+    100% { transform: rotate(360deg); margin-right: 0px;   margin-top: 0px;
+    }
+
+}
