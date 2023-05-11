@@ -1,0 +1,187 @@
+body,html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.wrapper {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex; */
+}
+.form-wrapper {
+    width:60vw;
+    height:65vh;
+    display: flex;
+    background: #f5f5f5;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+form#registration_form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.register {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.personal {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.checks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.submit {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    border-top:1px solid grey;
+}
+input::placeholder {
+    text-transform: capitalize;
+    color:#555;
+    text-indent: 20px;
+}
+span.icon {
+    display: flex;
+    width:40px;
+    height:40px;
+    margin-right:3%;
+}
+form#registration_form > div > div > div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.user_field .icon {
+    background: url(images/username.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+.email_field .icon {
+    background: url(images/email.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+.password_field .icon {
+    background: url(images/pswd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    margin-right: 5%;
+    width: 43px;
+}
+.register_fields {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.user_field {
+    width: 100%;
+    align-items: center;
+}
+.email_field {    
+    width: 100%;
+}
+.password_field {
+    width: 53%;
+}
+.confirm_password_field {
+    width: 44%;
+}
+.user_field input {
+    width: calc(97% - 40px);
+}
+.email_field input {
+    width: calc(97% - 40px);
+}
+.password_field input {
+    width: calc(97% - 40px);
+}
+.confirm_password_field input {
+    width: 100%;
+}
+input,select {
+    height:50px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.personal_fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.name_field {
+    width: 48%;
+}
+.lastname_field {
+    width: 48%;
+}
+.gender_field {
+    width: 48%;
+}
+.bday_field {
+    width: 48%;
+}
+.personal_fields > div > input, .personal_fields > div > select {
+    width: 100%;
+}
+input#date {
+    padding-left: 25px;
+}
+select#gender {
+    padding-left: 23px;
+}
+.checks > div {
+    display: flex;
+    align-items: center;
+}
+.checks input {
+    height: 15px;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17%;
+    height: 45px;
+    background: limegreen;
+    color: white;
+    font-size: 1.25vw;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
